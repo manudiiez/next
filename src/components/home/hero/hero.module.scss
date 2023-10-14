@@ -1,0 +1,45 @@
+@import '@/scss/index.scss';
+
+.hero {
+    padding: 0 1.2rem;
+    height: 700px;
+    background-image: url('/hogwarts-legacy-wallpaper.jpg');
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    >div {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .discount {
+        font-weight: bold;
+        font-size: 1rem;
+        background-color: $primary;
+        padding: .3rem .5rem;
+        border-radius: 10px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 1.2rem;
+
+        button {
+            width: 100%;
+            font-size: 1rem;
+            border-radius: 20px;
+            padding: .8rem 0;
+            background-color: $primary;
+
+            &:last-of-type {
+                background-color: transparent;
+                border: 1px solid $text-primary;
+            }
+        }
+
+    }
+}
